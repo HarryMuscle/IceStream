@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * IceStream - The Official IceFilms Android Application
+ * Copyright (C) 2011-2013 Stonyx
+ *
+ * The IceStream application (and any "covered work" as defined by the GNU General Public
+ * License Version 3) is licensed under the GNU General Public License Version 3 (henceforth
+ * referred to as "GNU GPL V3") with the following amendments that supersede any relevant wording
+ * in the GNU GPL V3:
+ *
+ * 1. The IceStream application (and any "covered work" as defined by the GNU GPL V3) can be
+ *    statically and/or dynamically linked to any source code, library, or application developed
+ *    or released by Stonyx (the original authors of the IceStream application), regardless of the
+ *    type of license that such source code, library, or application is licensed under.
+ *
+ * 2. The IceStream application (and any "covered work" as defined by the GNU GPL V3) can not be
+ *    distributed for a fee without the prior written consent provided by Stonyx (the original
+ *    authors of the IceStream application).
+ *
+ * The preceding amendments make up part of the license that the IceStream application is licensed
+ * under.  They apply to and need to be included (along with the GNU GPL V3) with any derivative
+ * work as outlined in the GNU GPL V3.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU GPL V3 for more details.
+ *
+ * You should have received a copy of the GNU GPL V3 along with this program.  If not, see
+ * http://www.gnu.org/licenses/.
+-->
+
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="General Preferences">
+    <EditTextPreference
+      android:defaultValue="http://www.icefilms.info/"
+      android:dialogTitle="IceFilms URL"
+      android:inputType="textNoSuggestions"
+      android:key="IceFilmsURL"
+      android:summary="Internet address for IceFilms"
+      android:title="IceFilms URL">
+    </EditTextPreference>
+    <EditTextPreference
+      android:defaultValue="20"
+      android:dialogTitle="Timeout"
+      android:inputType="number"
+      android:key="ConnectionTimeout"
+      android:summary="Connection timeout in seconds"
+      android:title="Timeout">
+    </EditTextPreference>
+    <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="SideBySide"
+      android:summary="Display video image and description side by side"
+      android:title="Side by Side">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="EpisodeCount"
+      android:summary="Display episode count when available"
+      android:title="Episode Count">
+    </CheckBoxPreference>
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="Open/Download Preferences">
+    <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="PreventSleep"
+      android:summary="Prevent the device from going to sleep while downloading"
+      android:title="Prevent Sleep">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="SelectApplication"
+      android:summary="Always select which appliation to use to open the file"
+      android:title="Select Application">
+    </CheckBoxPreference>
+    <EditTextPreference
+      android:dialogTitle="MegaUpload Username"
+      android:inputType="textNoSuggestions"
+      android:key="MUMVUsername"
+      android:summary="Username used to log into MegaUpload"
+      android:title="MegaUpload Username">
+    </EditTextPreference>
+    <EditTextPreference
+      android:dialogTitle="MegaUpload Password"
+      android:inputType="textPassword"
+      android:key="MUMVPassword"
+      android:summary="Password used to log into MegaUpload"
+      android:title="MegaUpload Password">
+    </EditTextPreference>
+    <EditTextPreference
+      android:dialogTitle="RapidShare Username"
+      android:key="RapidShareUsername"
+      android:inputType="textNoSuggestions"
+      android:summary="Usernamed used to log into RapidShare"
+      android:title="RapidShare Username">
+    </EditTextPreference>
+    <EditTextPreference
+      android:dialogTitle="RapidShare Password"
+      android:key="RapidSharePassword"
+      android:inputType="textPassword"
+      android:summary="Password used to log into RapidShare"
+      android:title="RapidShare Password">
+    </EditTextPreference>
+  </PreferenceCategory>
+</PreferenceScreen>

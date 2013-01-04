@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * IceStream - The Official IceFilms Android Application
+ * Copyright (C) 2011-2013 Stonyx
+ *
+ * The IceStream application (and any "covered work" as defined by the GNU General Public
+ * License Version 3) is licensed under the GNU General Public License Version 3 (henceforth
+ * referred to as "GNU GPL V3") with the following amendments that supersede any relevant wording
+ * in the GNU GPL V3:
+ *
+ * 1. The IceStream application (and any "covered work" as defined by the GNU GPL V3) can be
+ *    statically and/or dynamically linked to any source code, library, or application developed
+ *    or released by Stonyx (the original authors of the IceStream application), regardless of the
+ *    type of license that such source code, library, or application is licensed under.
+ *
+ * 2. The IceStream application (and any "covered work" as defined by the GNU GPL V3) can not be
+ *    distributed for a fee without the prior written consent provided by Stonyx (the original
+ *    authors of the IceStream application).
+ *
+ * The preceding amendments make up part of the license that the IceStream application is licensed
+ * under.  They apply to and need to be included (along with the GNU GPL V3) with any derivative
+ * work as outlined in the GNU GPL V3.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU GPL V3 for more details.
+ *
+ * You should have received a copy of the GNU GPL V3 along with this program.  If not, see
+ * http://www.gnu.org/licenses/.
+-->
+
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="info.icefilms.icestream"
+  android:versionCode="12"
+  android:versionName="1.3.0">
+  <uses-permission
+    android:name="android.permission.ACCESS_COARSE_LOCATION">
+  </uses-permission>
+  <uses-permission
+    android:name="android.permission.ACCESS_NETWORK_STATE">
+  </uses-permission>
+  <uses-permission
+    android:name="android.permission.INTERNET">
+  </uses-permission>
+  <uses-permission
+    android:name="android.permission.READ_PHONE_STATE">
+  </uses-permission>
+  <uses-permission
+    android:name="android.permission.WAKE_LOCK">
+  </uses-permission>
+    <uses-permission
+    android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+  </uses-permission>
+  <uses-sdk
+    android:minSdkVersion="7"
+    android:targetSdkVersion="17">
+  </uses-sdk>
+  <application
+    android:hardwareAccelerated="true"
+    android:icon="@drawable/icon"
+    android:label="@string/app_name">
+    <activity
+      android:label="@string/app_name"
+      android:name=".MainActivity"
+      android:windowSoftInputMode="adjustResize|stateHidden">
+      <intent-filter >
+        <action
+          android:name="android.intent.action.MAIN">
+        </action>
+        <category
+          android:name="android.intent.category.LAUNCHER">
+        </category>
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".browse.BrowseActivity">
+    </activity>
+    <activity
+      android:name="com.stonyx.megastream.open.OpenActivity">
+    </activity>
+    <activity
+      android:name=".PreferencesActivity"
+      android:windowSoftInputMode="stateHidden|adjustResize">
+    </activity>
+    <activity
+      android:name=".PreferenceHeadersActivity"
+      android:windowSoftInputMode="stateHidden|adjustResize">
+    </activity>
+    <activity
+      android:name=".HelpActivity">
+    </activity>
+    <activity
+      android:hardwareAccelerated="true"
+      android:name="com.mobclix.android.sdk.MobclixBrowserActivity"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar">
+    </activity>
+    <meta-data
+      android:name="com.mobclix.APPLICATION_ID"
+      android:value="E0362931-00E0-44ED-ACAA-E97835D35257">
+    </meta-data>
+  </application>
+</manifest>

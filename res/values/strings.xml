@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * IceStream - The Official IceFilms Android Application
+ * Copyright (C) 2011-2013 Stonyx
+ *
+ * The IceStream application (and any "covered work" as defined by the GNU General Public
+ * License Version 3) is licensed under the GNU General Public License Version 3 (henceforth
+ * referred to as "GNU GPL V3") with the following amendments that supersede any relevant wording
+ * in the GNU GPL V3:
+ *
+ * 1. The IceStream application (and any "covered work" as defined by the GNU GPL V3) can be
+ *    statically and/or dynamically linked to any source code, library, or application developed
+ *    or released by Stonyx (the original authors of the IceStream application), regardless of the
+ *    type of license that such source code, library, or application is licensed under.
+ *
+ * 2. The IceStream application (and any "covered work" as defined by the GNU GPL V3) can not be
+ *    distributed for a fee without the prior written consent provided by Stonyx (the original
+ *    authors of the IceStream application).
+ *
+ * The preceding amendments make up part of the license that the IceStream application is licensed
+ * under.  They apply to and need to be included (along with the GNU GPL V3) with any derivative
+ * work as outlined in the GNU GPL V3.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU GPL V3 for more details.
+ *
+ * You should have received a copy of the GNU GPL V3 along with this program.  If not, see
+ * http://www.gnu.org/licenses/.
+-->
+
+<resources>
+  <string name="app_name">Ice Stream</string>
+  <string name="main_home">Home</string>
+  <string name="main_tv_shows">TV Shows</string>
+  <string name="main_movies">Movies</string>
+  <string name="main_music">Music</string>
+  <string name="main_stand_up">Stand-Up</string>
+  <string name="main_other">Other</string>
+  <string name="main_invalid_url_error">The URL specified in Preferences for the IceFilms website
+      is invalid.</string>
+
+  <string name="browse_retry">Try Connecting Again</string>
+  <string name="browse_progress">Please wait while we retrieve information from IceFilms.</string>
+  <string name="browse_page_download_error">An error occurred while downloading information from
+      IceFilms.</string>
+  <string name="browse_page_timeout_error">Unable to connect to IceFilms. IceFilms might be down
+      currently.</string>
+  <string name="browse_image_download_error">An error occurred while downloading this item\'s
+      image.</string>
+  <string name="browse_image_decode_error">An error occurred while decoding this item\'s
+      image.</string>
+  <string name="browse_image_timeout_error">Unable to connect to the server hosting this item\'s
+      image. That server might be down currently.</string>
+  <string name="browse_parse_error">An error occurred processing information from IceFilms.</string>
+  <string name="browse_database_error">Unable to connect to the IceFilms database. IceFilms might
+      be down currently.</string>
+
+  <string name="help_help">
+    Note: Please also install MoboPlayer, MX Video Player, or VPlayer to take full advantage of
+    Ice Stream.\n
+    \nIce Stream allows you to quickly and easily browse and watch the thousands of TV shows and
+    movies cataloged by the IceFilms website. Simply choose a category when you first open the
+    application and start browsing the huge collection of videos available to you. Once you find
+    something you want to watch, choose one of the file sources. You will be given a choice to open
+    the file by streaming it, open the file after first downloading it, or just download and save
+    the file.\n
+    \nIn order to play the video files you will need to have an application installed on your
+    device that supports the DivX file format. Most devices will require the installation of one of
+    the many free media players available for the Android platform. Not all media players have support
+    for file streaming and these will require that the file first be downloaded. Three full featured
+    media players that support the DivX file format and have streaming support are MoboPlayer,
+    MX Video Player, and VPlayer. We highly recommend that you install one of these media players to
+    take full advantage of Ice Stream.\n
+    \nTechnical Notes: DivX formated files usually use the avi file extension, however, the avi
+    file extension is also used for other file formats. The default video player installed on most
+    devices supports the avi file extension, however, it does not support the DivX file format.
+    Therefore if you try to play DivX files using the default video player it will result in the
+    video player producing an error message. Also note that if the only media player installed on
+    your device does not support the avi file extension or does not support streaming (and you
+    choose to open the file by streaming it) you will receive an error message letting you know that
+    no application is installed on your device that can open the file. To rectify all of these
+    issues, we highly recommend you install one of the media players recommended above.
+  </string>
+  <string name="help_support">
+    If you require further assistance or have\n
+    any comments, suggestions, or complaints\n
+    about this application please feel free\n
+    to post on the Ice Stream Support Thread\n
+    on the Ice Films Forum.
+  </string>
+  <string name="help_about">
+    %1$s Version %2$s\n
+    www.icefilms.info
+  </string>
+  <string name="help_disclaimer">
+    Disclaimer: None of the videos available through this application are hosted by Ice Films. The
+    Ice Stream application is a mobile front end for the Ice Films website which is a catalog of
+    videos available on MegaUpload and 2Shared. Please direct any legal inquiries to the MegaUpload
+    or 2Shared corporations who own the servers on which these videos are hosted.
+  </string>
+</resources>
